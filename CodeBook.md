@@ -43,11 +43,93 @@ SECTION II: CODE BOOK
 
 Variables in the output data file Step_Five_Tidy_Data.txt:
 
-[1] "Activity_labels" - char                
-[2] "Subject" - char                       
-[3]-[81] All other measure variables included in the output are numeric variables.
+Features	|	Type	|	Units
+----------|-------|-----------
+Activity_labels	|	Character	|	Categorical
+Subject	|	Character	|	Categorical
+tBodyAcc-mean()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyAcc-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyAcc-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-mean()-X	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-mean()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-mean()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-mean()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyAccMag-mean()	|	Numeric	|	HZ/2.56 seconds
+tGravityAccMag-mean()	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerkMag-mean()	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroMag-mean()	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerkMag-mean()	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-mean()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-meanFreq()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-meanFreq()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-meanFreq()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-mean()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-meanFreq()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-meanFreq()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-meanFreq()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-mean()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-mean()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-mean()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-meanFreq()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-meanFreq()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-meanFreq()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAccMag-mean()	|	Numeric	|	HZ/2.56 seconds
+fBodyAccMag-meanFreq()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyAccJerkMag-mean()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyAccJerkMag-meanFreq()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroMag-mean()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroMag-meanFreq()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroJerkMag-mean()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroJerkMag-meanFreq()	|	Numeric	|	HZ/2.56 seconds
+tBodyAcc-std()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyAcc-std()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyAcc-std()-Z	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-std()-X	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-std()-Y	|	Numeric	|	HZ/2.56 seconds
+tGravityAcc-std()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-std()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-std()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerk-std()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-std()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-std()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyGyro-std()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-std()-X	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-std()-Y	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerk-std()-Z	|	Numeric	|	HZ/2.56 seconds
+tBodyAccMag-std()	|	Numeric	|	HZ/2.56 seconds
+tGravityAccMag-std()	|	Numeric	|	HZ/2.56 seconds
+tBodyAccJerkMag-std()	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroMag-std()	|	Numeric	|	HZ/2.56 seconds
+tBodyGyroJerkMag-std()	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-std()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-std()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAcc-std()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-std()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-std()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyAccJerk-std()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-std()-X	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-std()-Y	|	Numeric	|	HZ/2.56 seconds
+fBodyGyro-std()-Z	|	Numeric	|	HZ/2.56 seconds
+fBodyAccMag-std()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyAccJerkMag-std()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroMag-std()	|	Numeric	|	HZ/2.56 seconds
+fBodyBodyGyroJerkMag-std()	|	Numeric	|	HZ/2.56 seconds
 
-The numeric variables are a subsetof the raw dataset, retaining only those variables which measure the mean or standard deviation of a measurement (steps 11-13 in Section I, above). Givent hat there are 180 unique Activity/Subect combinations, the resultant dataset has 180 rows, each containing the average of the stated measurements for that subset.
+
+
+The numeric variables are a subsetof the raw dataset, retaining only those variables which measure the mean or standard deviation of a measurement (steps 11-13 in Section I, above). Givent hat there are 180 unique Activity/Subect combinations, the resultant dataset has 180 rows, each containing the average of the stated measurements for that subset. Units are an average of the raw measurement data, which were recorded time domain signals (prefix 't' to denote time) that were captured at a constant rate of 50 Hz and calculated in 2.56 second time interval windows (hench, Hz/2.56 seconds).
 
 
 
