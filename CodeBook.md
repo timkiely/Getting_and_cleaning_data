@@ -7,14 +7,14 @@ The raw data is obtained from
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 The files in the .zip file relevant for this transformation are:
--UCI HAR Dataset/features.txt
--UCI HAR Dataset/activity_labels.txt
--UCI HAR Dataset/train/X_train.txt
--UCI HAR Dataset/train/subject_train.txt
--UCI HAR Dataset/train/y_train.txt
--UCI HAR Dataset/test/X_test.txt
--UCI HAR Dataset/test/subject_test.txt
--UCI HAR Dataset/test/y_test.txt
+~/UCI HAR Dataset/features.txt
+~/UCI HAR Dataset/activity_labels.txt
+~/UCI HAR Dataset/train/X_train.txt
+~/UCI HAR Dataset/train/subject_train.txt
+~/UCI HAR Dataset/train/y_train.txt
+~/UCI HAR Dataset/test/X_test.txt
+~/UCI HAR Dataset/test/subject_test.txt
+~/UCI HAR Dataset/test/y_test.txt
 
 The following are the transformation steps used in run_analysis.R:
 1) Download .zip file into a working directory, point R session to working directory
@@ -23,7 +23,7 @@ The following are the transformation steps used in run_analysis.R:
 3b) Name the variables in train.raw using the second column of "feats" (i.e., names(train.raw<-feats[,2])
 4a) Read in the activity label numbers from activity_labels.txt as variable "train.y"
 4b) Attach column name "Activity_labels_no" to vector "train.y"
-5a) Read in the  subject unique ID's from train/subject_train.txt as variable "train.subject"
+5a) Read in the  subject unique IDs from train/subject_train.txt as variable "train.subject"
 5b) Rename train.subject as "Subject"
 6) column-bind train.subject, train.y and train.raw into new variable "train.full"
 7) Repeat steps 3-6 for the test data to create final variable "test.full"
@@ -41,9 +41,13 @@ The following are the transformation steps used in run_analysis.R:
 
 SECTION II: CODE BOOK
 
-Variables in the output data file Step_Five_Tidy_Data.txt
+Variables in the output data file Step_Five_Tidy_Data.txt:
 
 [1] "Activity_labels" - char                
 [2] "Subject" - char                       
+[3]-[81] All other measure variables included in the output are numeric variables.
 
-All other measure variables included in the output are numeric variables.
+The numeric variables are a subsetof the raw dataset, retaining only those variables which measure the mean or standard deviation of a measurement (steps 11-13 in Section I, above). Givent hat there are 180 unique Activity/Subect combinations, the resultant dataset has 180 rows, each containing the average of the stated measurements for that subset.
+
+
+
