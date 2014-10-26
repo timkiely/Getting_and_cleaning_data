@@ -1,8 +1,8 @@
 This code book describes the data used in and created by the run_analysis.R script.
 
-SECTION I: STUDY DESIGN
+#SECTION I: STUDY DESIGN
 
-Raw Data:
+##Raw Data:
 The raw data is obtained from 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
@@ -16,6 +16,7 @@ The files in the .zip file relevant for this transformation are:
 ~/UCI HAR Dataset/test/subject_test.txt
 ~/UCI HAR Dataset/test/y_test.txt
 
+##Transformation
 The following are the transformation steps used in run_analysis.R:
 1) Download .zip file into a working directory, point R session to working directory
 2) Read in feature.txt as variable "feats"
@@ -39,8 +40,9 @@ The following are the transformation steps used in run_analysis.R:
 16) write the final dataframe, "data.tidy", to a text file
 
 
-SECTION II: CODE BOOK
+#SECTION II: CODE BOOK
 
+##Variables
 Variables in the output data file Step_Five_Tidy_Data.txt:
 
 Features	|	Type	|	Units
@@ -128,7 +130,7 @@ fBodyBodyGyroMag-std()	|	Numeric	|	HZ/2.56 seconds
 fBodyBodyGyroJerkMag-std()	|	Numeric	|	HZ/2.56 seconds
 
 
-
+##Description
 The numeric variables are a subsetof the raw dataset, retaining only those variables which measure the mean or standard deviation of a measurement (steps 11-13 in Section I, above). Givent hat there are 180 unique Activity/Subect combinations, the resultant dataset has 180 rows, each containing the average of the stated measurements for that subset. Units are an average of the raw measurement data, which were recorded time domain signals (prefix 't' to denote time) that were captured at a constant rate of 50 Hz and calculated in 2.56 second time interval windows (hench, Hz/2.56 seconds).
 
 
