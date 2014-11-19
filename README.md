@@ -1,5 +1,5 @@
  
- #GETTING AND CLEANING DATA
+ # GETTING AND CLEANING DATA
  
  This script is my submission for the course project portion of the Coursera Getting and Cleaning Data online course offered  by John Hopkins. The below script reads in sensor data from: 
  https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
