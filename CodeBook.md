@@ -17,7 +17,7 @@ The files in the .zip file relevant for this transformation are:
 7. ~/UCI HAR Dataset/test/subject_test.txt
 8. ~/UCI HAR Dataset/test/y_test.txt
 
-##Transformation
+##Transformationm
 The following are the transformation steps used in run_analysis.R:
 
 1. Download .zip file into a working directory, point R session to working directory
