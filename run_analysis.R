@@ -1,6 +1,6 @@
 
 #====================================================================================#
-#  This script is par of the course project for the Coursera Getting and Cleaning Data
+#  This script is part of the course project for the Coursera Getting and Cleaning Data
 #    online course offered by John Hopkins. The below script reads in sensor data from 
 #    https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 #     combines the training and test sets then calculates averages for all columns with 
